@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:38BDF8&height=200&section=header&text=Farel%20Bayone%20Meijabar&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=API%20Engineering%20%7C%20AI%20%26%20Cloud&descAlignY=56" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:38BDF8&height=200&section=header&text=Farel%20Bayone%20Meijabar&fontSize=38&fontColor=ffffff" alt="Header" />
 </p>
 
 # 👋 Hi, I'm Farel Bayone Meijabar

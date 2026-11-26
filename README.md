@@ -234,9 +234,14 @@ Developed a web-based expert system using PHP and MySQL to assist in identifying
 
 ## 🏆 Achievements & Professional Development
 
-- 🥇 **Best Capstone Presentation (2024)** – Urban Seeds Farming Chatbot.
-- ☁️ **MSIB – Tim Corps Cloud Architect** – Practical exposure to AWS cloud architecture.
-- 🎓 **TQUK Level 7 Diploma in Operations Management.**
+- 🥇 **Best Capstone Presentation (June 2024)** – Urban Seeds Farming Chatbot, AWS Cloud Professional program, MSIB Batch 6.
+- ☁️ **AWS Cloud Solution Architect** – Kampus Merdeka MSIB Batch 6, TIMCorp Academy (16 Feb – 30 Jun 2024).
+- ☁️ **AWS Cloud Quest: Cloud Practitioner** – Amazon Web Services (2024).
+- 📄 **2 Published Journal Papers** – Jurnal Ilmu Komputer dan Matematika, Vol. 5 No. 2 (2024), and Sasambo: Jurnal Abdimas, Vol. 7 No. 2 (2025, first author).
+- 🎓 **Level 7 Diploma in Operations Management** – TQUK, Inspire London College (2020).
+- 🎓 **OTHM Level 6 Diploma in Business Management** – Ascent School of Management London (2021).
+- 🗣️ **GE-EPT Score: 563** – Golden English (2026).
+- 🗣️ **English CEFR Level B2** – Rosetta Stone (2023).
 - 🥋 **1st Place – Kyorugi DKI Jakarta**, IYOS.
 - 💻 Participated in technical workshops and professional development programs.
 

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/header.svg?v=1" alt="header" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/header.svg?v=2" alt="header" width="100%" />
 </p>
 
 # 👋 Hi, I'm Farel Bayone Meijabar
@@ -21,7 +21,7 @@ Currently, I am expanding my professional experience in **IT Application Develop
 I believe that technology is not just about writing code. It is about solving problems, connecting systems, and creating meaningful solutions.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 🧑‍💻 About Me
@@ -39,11 +39,11 @@ I believe that technology is not just about writing code. It is about solving pr
 `Application Development` · `API Engineering` · `Backend Development` · `System Integration` · `Artificial Intelligence` · `Cloud Computing`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/terminal.svg?v=1" alt="terminal" width="720" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/terminal.svg?v=2" alt="terminal" width="720" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 💼 Professional Experience
@@ -73,7 +73,7 @@ Working within an enterprise IT environment, gaining practical experience in app
 `IBM webMethods` `Software AG Designer` `Postman` `Confluence` `Bitbucket` `Git`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 🚀 Featured Projects
@@ -97,7 +97,7 @@ An AI-powered chatbot designed to provide information and assistance related to 
 🏆 **Achievement:** Best Capstone Presentation – 2024.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ### 🪴 Planti AI – Intelligent Plant Care Assistant
@@ -115,7 +115,7 @@ An AI-powered plant care assistant designed to help users identify plant conditi
 **Tech Stack:** `Python` `Streamlit` `Google Gemini API` `SQLite`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ### 💤 SleepWise – Sleep Disorder Expert System
@@ -139,7 +139,7 @@ The system implements Forward Chaining and Certainty Factor methods to process u
 **Development Methodology:** Waterfall SDLC and Black Box Testing.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 🧰 Technical Skills & Technologies
@@ -147,7 +147,7 @@ The system implements Forward Chaining and Certainty Factor methods to process u
 Technologies and tools I have explored through professional experience, academic projects, technical training, and independent learning.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/skills-marquee.svg?v=1" alt="skills-marquee" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/skills-marquee.svg?v=2" alt="skills-marquee" width="100%" />
 </p>
 
 ### Programming Languages
@@ -223,7 +223,7 @@ Technologies and tools I have explored through professional experience, academic
 Additional exposure: `Kibana` `Rancher`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 🎓 Education
@@ -253,7 +253,7 @@ Additional exposure: `Kibana` `Rancher`
 Developed a web-based expert system using PHP and MySQL to assist in identifying sleep disorders through a knowledge-based inference mechanism and certainty-level calculations.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 🏆 Achievements & Professional Development
@@ -274,7 +274,7 @@ Developed a web-based expert system using PHP and MySQL to assist in identifying
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 🌐 Areas of Interest
@@ -292,7 +292,7 @@ I am continuously exploring different areas of technology to strengthen my techn
 | DevOps | CI/CD, Version Control, Monitoring |
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 📈 GitHub Statistics
@@ -315,7 +315,15 @@ I am continuously exploring different areas of technology to strengthen my techn
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/farelbayone/farelbayone/output-arcade/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/farelbayone/farelbayone/output-arcade/pacman-contribution-graph.svg">
+    <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/farelbayone/farelbayone/output-arcade/pacman-contribution-graph.svg">
+  </picture>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 🎯 Currently Exploring
@@ -329,7 +337,7 @@ I am continuously exploring different areas of technology to strengthen my techn
 - Improving software engineering practices and development workflows.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 ## 🤝 Let's Connect!
@@ -349,7 +357,7 @@ I'm always open to connecting with developers, technology enthusiasts, and profe
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=1" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/divider.svg?v=2" alt="divider" width="100%" />
 </p>
 
 <p align="center">
@@ -363,5 +371,5 @@ I'm always open to connecting with developers, technology enthusiasts, and profe
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/footer.svg?v=1" alt="footer" width="100%" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/footer.svg?v=2" alt="footer" width="100%" />
 </p>

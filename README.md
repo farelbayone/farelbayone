@@ -241,7 +241,7 @@ Developed a web-based expert system using PHP and MySQL to assist in identifying
 - 💻 Participated in technical workshops and professional development programs.
 
 <p align="center">
-  <img src="./achievements.svg" alt="Achievements" />
+  <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/achievements.svg" alt="Achievements" />
 </p>
 
 ---

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner.svg" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:38BDF8&height=200&section=header&text=Farel%20Bayone%20Meijabar&fontSize=38&fontColor=ffffff" alt="Header" />
 </p>
 
 # 👋 Hi, I'm Farel Bayone Meijabar
@@ -321,4 +321,8 @@ I'm always open to connecting with developers, technology enthusiasts, and profe
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=farelbayone&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,100:0EA5E9&height=120&section=footer" alt="Footer" />
 </p>

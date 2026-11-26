@@ -241,7 +241,7 @@ Developed a web-based expert system using PHP and MySQL to assist in identifying
 - 💻 Participated in technical workshops and professional development programs.
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=farelbayone&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
+  <img src="./achievements.svg" alt="Achievements" />
 </p>
 
 ---

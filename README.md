@@ -289,6 +289,8 @@ I'm always open to connecting with developers, technology enthusiasts, and profe
   </a>
   <a href="https://github.com/farelbayone">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <a href="https://www.instagram.com/farelbayone">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
 </p>
 

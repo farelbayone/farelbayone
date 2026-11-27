@@ -310,16 +310,27 @@ I am continuously exploring different areas of technology to strengthen my techn
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=farelbayone&theme=tokyo-night&hide_border=true&bg_color=1a1b27" alt="Activity Graph" />
 </p>
 
+<!-- Snake Animation -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/farelbayone/farelbayone/output/github-snake-dark.svg" alt="Snake animation" />
 </p>
 
+<!-- Pac-Man Animation -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/farelbayone/farelbayone/output-arcade/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/farelbayone/farelbayone/output-arcade/pacman-contribution-graph.svg">
     <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/farelbayone/farelbayone/output-arcade/pacman-contribution-graph.svg">
   </picture>
+</p>
+
+<!-- Mario Animation -->
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/farelbayone/farelbayone/main/mario_contribution.svg?v=1"
+    alt="Mario Contribution Graph"
+    width="100%"
+  />
 </p>
 
 <p align="center">

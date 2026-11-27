@@ -122,85 +122,77 @@ def generate_mario_github_svg(filename="mario_contribution.svg"):
     svg_elements.append(f'  <rect x="{pipe_x}" y="{pipe_top}" width="24" height="30" fill="#00A800" stroke="#000"/>')
     svg_elements.append(f'  <rect x="{pipe_x - 2}" y="{pipe_top}" width="28" height="10" fill="#00A800" stroke="#000"/>')
 
-    # --- MATH & PATHFINDING ---
+    # --- PATHFINDING + BRICK PLACEMENT ---
     mario_height = 14
-    total_travel_distance = (castle_x + 25) - pipe_x # Used to calculate exactly when to collect coins
-    
+    total_travel_distance = max(1, (castle_x + 25) - pipe_x)
+
     path_d = f"M {pipe_x + 4} {ground_y} L {pipe_x + 4} {pipe_top - mario_height} "
     current_x, current_y = pipe_x + 4, pipe_top - mario_height
-    
     empty_streak = 0
     coins_to_draw = []
+    brick_positions = []
 
-    # Process Grid
     for col, week in enumerate(weeks_data):
-        highest_block_row = rows 
+        highest_block_row = rows - 1
         col_x = grid_x_offset + col * step
         is_empty_week = True
-        
-        for row, day in enumerate(week['contributionDays']):
+
+        for row, day in enumerate(week.get('contributionDays', [])):
             lvl = level_map.get(day.get('contributionLevel', 'NONE'), 'empty')
             block_y = top_padding + row * step
-            
-            svg_elements.append(f'  <rect x="{col_x}" y="{block_y}" width="{cell_size}" height="{cell_size}" class="{lvl}" />')
-            
+
+            # Draw only non-empty contribution cells.
             if lvl != 'empty':
+                svg_elements.append(
+                    f'  <rect x="{col_x}" y="{block_y}" width="{cell_size}" '
+                    f'height="{cell_size}" class="{lvl}" />'
+                )
                 is_empty_week = False
-                if row < highest_block_row: highest_block_row = row
-            
-            # Level 4 Coin!
+                highest_block_row = min(highest_block_row, row)
+
             if lvl == 'lvl4':
-                coins_to_draw.append({'x': col_x, 'y': block_y - 12, 't': (col_x - pipe_x) / total_travel_distance})
-        
-        # Gap Logic
-        if is_empty_week: empty_streak += 1
-        else: empty_streak = 0
-            
-        target_x, target_y = col_x, (top_padding + highest_block_row * step) - mario_height
-        
-        # If huge gap (4 weeks), jump for a coin!
-        if empty_streak == 4:
-            target_y -= 25 # Jump high
-            coins_to_draw.append({'x': col_x, 'y': target_y - 4, 't': (col_x - pipe_x) / total_travel_distance})
-            empty_streak = 0 
-            
-        if target_y != current_y:
-            path_d += f" Q {current_x + (target_x - current_x) / 2} {min(current_y, target_y) - 25} {target_x} {target_y}"
+                coins_to_draw.append({
+                    'x': col_x, 'y': block_y - 12,
+                    't': max(0.0, min(1.0, (col_x - pipe_x) / total_travel_distance))
+                })
+
+        if is_empty_week:
+            empty_streak += 1
         else:
-            path_d += f" L {target_x} {target_y}"
-            
+            empty_streak = 0
+
+        target_x = col_x
+        target_y = (top_padding + highest_block_row * step) - mario_height
+        # Make a clear jump every fourth column, and when the target height changes.
+        should_jump = (col % 4 == 2) or abs(target_y - current_y) > 12
+
+        if should_jump:
+            control_x = (current_x + target_x) / 2
+            control_y = min(current_y, target_y) - 40
+            # Quadratic Bézier midpoint: place a brick just above Mario's head at the apex.
+            apex_x = (current_x + 2 * control_x + target_x) / 4
+            apex_y = (current_y + 2 * control_y + target_y) / 4
+            brick_size = 18
+            brick_positions.append((apex_x - brick_size / 2, apex_y - brick_size))
+            path_d += f" Q {control_x:.1f} {control_y:.1f} {target_x} {target_y} "
+        else:
+            path_d += f" L {target_x} {target_y} "
+
         current_x, current_y = target_x, target_y
 
-
-    # Floating Mario-style brick blocks
-    def draw_brick_block(x, y, size=18):
+    # Draw the bricks after the contribution cells, before Mario is animated over them.
+    for bx, by in brick_positions:
         svg_elements.append(
-            f'<rect x="{x}" y="{y}" width="{size}" height="{size}" '
+            f'  <g class="brick">'
+            f'<rect x="{bx:.1f}" y="{by:.1f}" width="18" height="18" '
             f'fill="#C84C0C" stroke="#6B2608" stroke-width="1.5" />'
-        )
-        # Mortar lines
-        svg_elements.append(
-            f'<path d="M {x} {y + size/2} H {x + size} '
-            f'M {x + size/2} {y} V {y + size/2} '
-            f'M {x + size/3} {y + size/2} V {y + size} '
-            f'M {x + size*2/3} {y + size/2} V {y + size}" '
+            f'<path d="M {bx:.1f} {by + 9:.1f} H {bx + 18:.1f} '
+            f'M {bx + 9:.1f} {by:.1f} V {by + 9:.1f} '
+            f'M {bx + 4.5:.1f} {by + 9:.1f} V {by + 18:.1f} '
+            f'M {bx + 13.5:.1f} {by + 9:.1f} V {by + 18:.1f}" '
             f'stroke="#6B2608" stroke-width="1" fill="none" />'
+            f'</g>'
         )
-
-    # Floating brick platforms across the level
-    brick_y_1 = ground_y - 65
-    brick_y_2 = ground_y - 95
-    brick_size = 18
-
-    for brick_x in [grid_x_offset + 100, grid_x_offset + 118,
-                    grid_x_offset + 136, grid_x_offset + 280,
-                    grid_x_offset + 298, grid_x_offset + 316,
-                    grid_x_offset + 460, grid_x_offset + 478]:
-        draw_brick_block(brick_x, brick_y_1, brick_size)
-
-    for brick_x in [grid_x_offset + 190, grid_x_offset + 208,
-                    grid_x_offset + 352, grid_x_offset + 370]:
-        draw_brick_block(brick_x, brick_y_2, brick_size)
 
     # End Path
     flag_top = top_padding - 10
@@ -221,8 +213,8 @@ def generate_mario_github_svg(filename="mario_contribution.svg"):
         svg_elements.append(f'  </g>')
 
     # FLAGPOLE & FLAG DROP
-    t_flag = min(1.0, (flag_x - pipe_x) / total_travel_distance)
-    t_flag_end = min(1.0, t_flag + 0.05)
+    t_flag = max(0.0, min(0.90, (flag_x - pipe_x) / total_travel_distance))
+    t_flag_end = min(0.95, t_flag + 0.05)
     
     svg_elements.append(f'  <rect x="{flag_x}" y="{flag_top}" width="3" height="{ground_y - flag_top}" fill="#FFF" stroke="#000" stroke-width="0.5"/>')
     svg_elements.append(f'  <circle cx="{flag_x + 1.5}" cy="{flag_top}" r="4" fill="#f8d820" stroke="#000"/>')

@@ -171,6 +171,37 @@ def generate_mario_github_svg(filename="mario_contribution.svg"):
             
         current_x, current_y = target_x, target_y
 
+
+    # Floating Mario-style brick blocks
+    def draw_brick_block(x, y, size=18):
+        svg_elements.append(
+            f'<rect x="{x}" y="{y}" width="{size}" height="{size}" '
+            f'fill="#C84C0C" stroke="#6B2608" stroke-width="1.5" />'
+        )
+        # Mortar lines
+        svg_elements.append(
+            f'<path d="M {x} {y + size/2} H {x + size} '
+            f'M {x + size/2} {y} V {y + size/2} '
+            f'M {x + size/3} {y + size/2} V {y + size} '
+            f'M {x + size*2/3} {y + size/2} V {y + size}" '
+            f'stroke="#6B2608" stroke-width="1" fill="none" />'
+        )
+
+    # Floating brick platforms across the level
+    brick_y_1 = ground_y - 65
+    brick_y_2 = ground_y - 95
+    brick_size = 18
+
+    for brick_x in [grid_x_offset + 100, grid_x_offset + 118,
+                    grid_x_offset + 136, grid_x_offset + 280,
+                    grid_x_offset + 298, grid_x_offset + 316,
+                    grid_x_offset + 460, grid_x_offset + 478]:
+        draw_brick_block(brick_x, brick_y_1, brick_size)
+
+    for brick_x in [grid_x_offset + 190, grid_x_offset + 208,
+                    grid_x_offset + 352, grid_x_offset + 370]:
+        draw_brick_block(brick_x, brick_y_2, brick_size)
+
     # End Path
     flag_top = top_padding - 10
     path_d += f" Q {current_x + 10} {current_y - 20} {flag_x - 4} {flag_top + 10} " # Jump to Flag
